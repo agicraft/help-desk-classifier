@@ -78,8 +78,7 @@
 
 ## Архитектура 
 
-!!! вставить фото с презы 
-
+![image](https://github.com/user-attachments/assets/3d5b5426-96f6-4c10-98c7-c2c8edcc5820)
 
 ## Начало работы: 
 
