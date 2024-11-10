@@ -1,0 +1,21 @@
+services:
+
+  ui:
+    build:
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./ui/src:/app/src
+      - ./ui/public:/app/public
+    environment:
+      - API_BASE_URI=$API_BASE_URI
+      - LISTEN_PORT=$LISTEN_PORT
+
+  backend:
+    build:
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./backend/src:/app/src
+    ports:
+      - "5678:5678" # debugger
+    environment:
+      - "LOG_LEVEL=INFO"
